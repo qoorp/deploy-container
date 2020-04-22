@@ -1,6 +1,6 @@
-FROM alpine:3.9
+FROM node:13-alpine
 
-ENV GCLOUD_VERSION 241.0.0
+ENV GCLOUD_VERSION 289.0.0
 
 RUN apk --no-cache --no-progress upgrade
 RUN apk add --no-progress --no-cache git bash openssh docker python2 openssl wget nodejs ca-certificates
